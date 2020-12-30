@@ -2,7 +2,7 @@
   "name": "testeroftheday-twitterbot",
   "version": "1.0.0",
   "description": "Tester of The Day Twitter Bot",
-  "main": "bot.js",
+  "main": "index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "twit": "^2.2.11"
