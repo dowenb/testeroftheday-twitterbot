@@ -1,0 +1,29 @@
+{
+  "name": "testeroftheday-twitterbot",
+  "version": "1.0.0",
+  "description": "Tester of The Day Twitter Bot",
+  "main": "bot.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dowenb/testeroftheday-twitterbot.git"
+  },
+  "keywords": [
+    "Twitter",
+    "Bot",
+    "Community"
+  ],
+  "author": "Ben Dowen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dowenb/testeroftheday-twitterbot/issues"
+  },
+  "homepage": "https://github.com/dowenb/testeroftheday-twitterbot#readme"
+}
