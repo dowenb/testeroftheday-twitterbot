@@ -1,5 +1,5 @@
 require('dotenv').config();
-import twit from 'twit';
+const twit = require('twit');
 
 const T = new twit({
     consumer_key: process.env.CONSUMER_KEY,
@@ -7,6 +7,8 @@ const T = new twit({
     access_token: process.env.ACCESS_TOKEN,
     access_token_secret: process.env.ACCESS_TOKEN_SECRET
 })
+
+console.log("Starting Tester of The Day Twitter Bot")
 
 // Utility function - Gives unique elements from an array
 function onlyUnique(value, index, self) {
@@ -74,5 +76,5 @@ function retweet(searchText) {
     })
 }
 
-// Run every 60 minutes
-setInterval(function () { retweet('#TesterOfTheDay'); }, 3600000)
+// Run every 60 seconds
+setInterval(function () { retweet('#TesterOfTheDay'); }, 60000)
