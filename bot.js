@@ -71,10 +71,12 @@ function retweet(searchText) {
         }
         else {
             console.log("Error while searching" + err_search)
-            process.exit(1)
+            // We don't need to call exit() because there will be nothing left to do, once the console log has finished.
+            process.exitCode = 1;
         }
     })
 }
 
-// Run every 60 seconds
-setInterval(function () { retweet('#TesterOfTheDay'); }, 60000)
+// Run ONCE only then exit
+retweet('#TesterOfTheDay');
+process.exitCode = 0;
