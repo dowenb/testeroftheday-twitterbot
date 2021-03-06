@@ -18,9 +18,9 @@ function onlyUnique(value, index, self) {
 function retweet(searchText) {
     // Params to be passed to the 'search/tweets' API endpoint
     let params = {
-        q: searchText + '',
+        q: searchText + ' -sex -filter:possibly_sensitive',
         result_type: 'mixed',
-        count: 25,
+        count: 10,
     }
 
     T.get('search/tweets', params, function (err_search, data_search, response_search) {
